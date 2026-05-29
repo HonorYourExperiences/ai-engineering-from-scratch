@@ -1,0 +1,26 @@
+{
+  "id": "career-aerospace-engineer",
+  "edition": "career",
+  "title": "Aerospace Engineer",
+  "subtitle": "Designs vehicles that fly through air and space.",
+  "ratio": "2:3",
+  "heroImage": {
+    "src": "/assets/sample-images/aerospace-engineer.svg",
+    "alt": "A young aerospace engineer sketching a rocket plane"
+  },
+  "palette": {
+    "background": "#dff6ff",
+    "accent": "#ff8a3d",
+    "panel": "#ffffff",
+    "ink": "#182033"
+  },
+  "quickFacts": [
+    { "label": "Works With", "value": "Rockets, planes, satellites" },
+    { "label": "Super Skill", "value": "Testing ideas safely" },
+    { "label": "Tool", "value": "Wind tunnel" }
+  ],
+  "capeAbility": "Turns big sky questions into testable designs.",
+  "tryThis": "Fold two paper airplanes. Change one wing shape and compare how each one flies.",
+  "identityHook": "I can imagine, test, improve, and launch brave ideas.",
+  "footer": "Build Your Dreaming Things • WonderCards Career Edition"
+}

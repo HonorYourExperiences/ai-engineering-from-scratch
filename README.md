@@ -104,6 +104,54 @@ flowchart LR
   U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
 ```
 
+
+---
+
+## WonderCards Studio
+
+This repository now includes **WonderCards Studio**, an editable-first production system for **Build Your Dreaming Things**, **Cape-Able Heroes**, and **WonderCards**. It renders card layouts from JSON data with React + TypeScript + Vite, then derives SVG, PNG, and PDF exports.
+
+### Editable-first rule
+
+The master files are structured card JSON in `data/`, React/TypeScript templates and components in `src/`, SVG icons and editable visual assets in `assets/`, and brand/layout rules in `brand/`. PNG, JPG, and PDF files are previews or delivery exports only; do not treat flattened raster files as the source of truth.
+
+### WonderCards setup
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run validate
+```
+
+The first rendered card is `data/career/aerospace-engineer.json`, displayed by `CareerWonderCard` in the Vite app.
+
+### WonderCards editing workflow
+
+1. Edit or create card JSON under the matching edition folder in `data/`.
+2. Keep titles, labels, facts, prompts, and footer text editable in JSON.
+3. Render cards through reusable React components in `src/components/`.
+4. Keep panels, borders, badges, icons, and layout decorations as editable SVG/components.
+5. Treat hero artwork as a replaceable image layer with `heroImage.src` and `heroImage.alt`.
+6. Run `npm run validate` before exporting.
+
+### WonderCards export workflow
+
+```bash
+npm run export:svg
+npm run export:png
+npm run export:pdf
+```
+
+Exports are written to `exports/svg/`, `exports/png/`, and `exports/pdf/`. Generated export files are ignored by Git by default; regenerate them from the JSON/SVG/React masters.
+
+### WonderCards layout ratios
+
+- Default WonderCard ratio: **2:3 vertical** (`800 × 1200` preview canvas).
+- Step-Into WonderCard ratio: **3:5 vertical** (`900 × 1500` preview canvas).
+
+See `brand/layout-rules.md` for safe area and ratio guidance. The local WonderCard Designer skill lives at `.agents/skills/wondercard-designer/SKILL.md` and is structured to be compatible with local-first design-agent workflows such as [Open Design](https://github.com/nexu-io/open-design).
+
 ## Getting started
 
 Three ways in. Pick one.

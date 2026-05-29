@@ -1,0 +1,20 @@
+{
+  "id": "creature-orca",
+  "edition": "creature",
+  "title": "Orca",
+  "subtitle": "A brilliant ocean hunter with family songs.",
+  "ratio": "2:3",
+  "heroImage": {
+    "src": "/assets/sample-images/orca.svg",
+    "alt": "An orca swimming through blue water"
+  },
+  "quickFacts": [
+    { "label": "Home", "value": "Oceans worldwide" },
+    { "label": "Power", "value": "Team communication" },
+    { "label": "Family", "value": "Pods" }
+  ],
+  "capeAbility": "Uses sound, memory, and teamwork to navigate the sea.",
+  "tryThis": "Invent a three-sound family signal and decide what each sound means.",
+  "identityHook": "I can listen deeply and work with my pod.",
+  "footer": "WonderCards Creature Edition"
+}
