@@ -1,0 +1,20 @@
+{
+  "id": "invention-omnilayr",
+  "edition": "invention",
+  "title": "OmniLayr",
+  "subtitle": "A smart layered surface for building adaptive dream things.",
+  "ratio": "2:3",
+  "heroImage": {
+    "src": "/assets/sample-images/omnilayr.svg",
+    "alt": "A colorful layered invention surface with glowing modules"
+  },
+  "quickFacts": [
+    { "label": "Type", "value": "Adaptive material system" },
+    { "label": "Power", "value": "Layer switching" },
+    { "label": "Use", "value": "Prototype anything" }
+  ],
+  "capeAbility": "Lets inventors stack, swap, and test ideas without starting over.",
+  "tryThis": "Draw a backpack with three layers: comfort, storage, and surprise power.",
+  "identityHook": "I can build in layers and improve one layer at a time.",
+  "footer": "Build Your Dreaming Things • WonderCards Invention Edition"
+}

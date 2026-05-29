@@ -1,0 +1,26 @@
+{
+  "id": "career-marine-biologist",
+  "edition": "career",
+  "title": "Marine Biologist",
+  "subtitle": "Studies ocean life and helps protect watery worlds.",
+  "ratio": "2:3",
+  "heroImage": {
+    "src": "/assets/sample-images/marine-biologist.svg",
+    "alt": "A marine biologist observing sea life with a tablet"
+  },
+  "palette": {
+    "background": "#d9fff6",
+    "accent": "#2ec4a6",
+    "panel": "#ffffff",
+    "ink": "#12313f"
+  },
+  "quickFacts": [
+    { "label": "Works With", "value": "Animals, reefs, water data" },
+    { "label": "Super Skill", "value": "Careful observing" },
+    { "label": "Tool", "value": "Field notebook" }
+  ],
+  "capeAbility": "Notices tiny ocean clues that help living systems thrive.",
+  "tryThis": "Watch a puddle, pond, or sink bowl. Sketch what moves, floats, sinks, or changes.",
+  "identityHook": "I can protect life by paying close attention.",
+  "footer": "Cape-Able Heroes • WonderCards Career Edition"
+}

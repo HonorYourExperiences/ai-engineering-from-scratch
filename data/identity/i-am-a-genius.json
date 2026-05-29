@@ -1,0 +1,20 @@
+{
+  "id": "identity-i-am-a-genius",
+  "edition": "identity",
+  "title": "I Am a Genius",
+  "subtitle": "My mind can notice, connect, practice, and grow.",
+  "ratio": "2:3",
+  "heroImage": {
+    "src": "/assets/sample-images/i-am-a-genius.svg",
+    "alt": "A bright thinking cloud filled with stars and tools"
+  },
+  "quickFacts": [
+    { "label": "Genius Can Be", "value": "Kind, curious, persistent" },
+    { "label": "Practice", "value": "Ask better questions" },
+    { "label": "Remember", "value": "Mistakes are data" }
+  ],
+  "capeAbility": "Turns effort, imagination, and reflection into new pathways.",
+  "tryThis": "Write one question you can ask when something feels hard.",
+  "identityHook": "I am already a learner with powerful ideas inside me.",
+  "footer": "Cape-Able Heroes • WonderCards Identity Edition"
+}

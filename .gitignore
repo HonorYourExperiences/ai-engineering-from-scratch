@@ -42,6 +42,8 @@ Thumbs.db
 *.log
 
 data/
+!data/
+!data/**
 models/
 checkpoints/
 wandb/
@@ -56,3 +58,9 @@ mlruns/
 
 .link-cache.json
 .claude/
+
+# Generated WonderCards exports (regenerate from JSON/SVG/React masters)
+exports/svg/*.svg
+exports/png/*.png
+exports/pdf/*.pdf
+!exports/**/.gitkeep

@@ -1,0 +1,77 @@
+name: wondercards-studio
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "AGENTS.md"
+      - ".agents/skills/wondercard-designer/**"
+      - ".github/workflows/wondercards.yml"
+      - "assets/**"
+      - "brand/**"
+      - "data/**"
+      - "index.html"
+      - "package-lock.json"
+      - "package.json"
+      - "scripts/export-pdf.ts"
+      - "scripts/export-png.ts"
+      - "scripts/export-svg.ts"
+      - "scripts/validate.ts"
+      - "src/**"
+      - "templates/**"
+      - "tsconfig*.json"
+      - "vite.config.ts"
+  pull_request:
+    branches: [main]
+    paths:
+      - "AGENTS.md"
+      - ".agents/skills/wondercard-designer/**"
+      - ".github/workflows/wondercards.yml"
+      - "assets/**"
+      - "brand/**"
+      - "data/**"
+      - "index.html"
+      - "package-lock.json"
+      - "package.json"
+      - "scripts/export-pdf.ts"
+      - "scripts/export-png.ts"
+      - "scripts/export-svg.ts"
+      - "scripts/validate.ts"
+      - "src/**"
+      - "templates/**"
+      - "tsconfig*.json"
+      - "vite.config.ts"
+
+permissions:
+  contents: read
+
+jobs:
+  build-validate-export:
+    name: build, validate, and export
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: install dependencies
+        run: npm ci
+      - name: build studio
+        run: npm run build
+      - name: validate card JSON
+        run: npm run validate
+      - name: export sample cards
+        run: |
+          npm run export:svg
+          npm run export:png
+          npm run export:pdf
+      - name: ensure generated exports stay untracked
+        run: |
+          if git status --short -- exports | grep .; then
+            echo "::error::Generated WonderCards exports should remain ignored/untracked."
+            git status --short -- exports
+            exit 1
+          fi

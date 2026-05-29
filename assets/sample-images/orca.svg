@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img">
+  <rect width="800" height="480" fill="#dff6ff"/>
+  <circle cx="620" cy="120" r="80" fill="#ffc857"/>
+  <path d="M80 360 C220 220 340 420 500 260 C600 160 680 300 760 220 L760 480 L80 480 Z" fill="#7b61ff" opacity="0.35"/>
+  <rect x="180" y="155" width="440" height="170" rx="42" fill="#ffffffcc" stroke="#182033" stroke-width="10"/>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182033">orca</text>
+</svg>
